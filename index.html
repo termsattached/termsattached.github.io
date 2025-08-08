@@ -43,6 +43,17 @@
     .tiny-link{font-size:12px}
     .row{display:flex;gap:24px;flex-wrap:wrap}
     .col{flex:1 1 280px}
+
+    /* Wrap long lines in PDUA block */
+    .pdua {
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      padding: 12px;
+      background: #fff;
+    }
   </style>
 
   <script type="application/json" id="terms-json">
@@ -65,7 +76,6 @@
     (function(){
       if(!sessionStorage.getItem('ta_visit_marked')){
         sessionStorage.setItem('ta_visit_marked','1');
-        // placeholder for future serverless POST
       }
       window._ta_mark_engagement = function(){
         try{ localStorage.setItem('ta_last_engagement', new Date().toISOString()); }catch(e){}
@@ -94,19 +104,19 @@
       <div class="wrap terms">
         <h2 id="terms-title">The Terms</h2>
         <ul class="bullets">
-  <li>My terms attach to my identifiers — email, phone, handle.</li>
-  <li>Use them, and you’ve agreed to my terms.</li>
-  <li>You can’t claim you didn’t see them; they’re here in plain sight.</li>
-  <li>Silence is logged.</li>
-  <li>Engagement is logged.</li>
-  <li>The protest works either way.</li>
-</ul>
-<p class="micro">Plain language for humans. Simple structure for machines.</p>
+          <li>My terms attach to my identifiers — email, phone, handle.</li>
+          <li>Use them, and you’ve agreed to my terms.</li>
+          <li>You can’t claim you didn’t see them; they’re here in plain sight.</li>
+          <li>Silence is logged.</li>
+          <li>Engagement is logged.</li>
+          <li>The protest works either way.</li>
+        </ul>
+        <p class="micro">Plain language for humans. Simple structure for machines.</p>
 
-<hr>
-<h3>Full Personal Data Use Agreement (PDUA)</h3>
-<p>This Agreement applies to all entities, human or automated, that interact with this email address or associated domains. <a href="/full-terms.txt">View as plain text</a>.</p>
-<pre>
+        <hr>
+        <h3>Full Personal Data Use Agreement (PDUA)</h3>
+        <p>This Agreement applies to all entities, human or automated, that interact with this email address or associated domains. <a href="/full-terms.txt">View as plain text</a>.</p>
+        <pre class="pdua">
 Personal Data Use Agreement (PDUA)
 
 (Applicable to all entities, human or automated, that interact with this email address or associated domains.)
@@ -171,7 +181,7 @@ If any clause is deemed unenforceable, the remaining clauses still apply in full
 7. Acceptance
 
 Engaging with this address or any resource under the domain termsattached.net constitutes full, unconditional, and irrevocable acceptance of these Terms.
-</pre>
+        </pre>
       </div>
     </section>
 
