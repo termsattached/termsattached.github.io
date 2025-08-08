@@ -1,0 +1,64 @@
+Personal Data Use Agreement (PDUA)
+
+(Applicable to all entities, human or automated, that interact with this email address or associated domains.)
+
+⸻
+
+1. Binding Nature of Terms
+
+By receiving, storing, transmitting, processing, or otherwise engaging with this email address (zebb@termsattached.net), its aliases, or any domain-linked resource, you automatically agree to these Terms.
+This Agreement overrides and supersedes any conflicting terms, conditions, policies, or agreements — whether you present them before, during, or after contact.
+
+⸻
+
+2. Prohibited Uses
+
+You MUST NOT, in whole or in part, directly or indirectly:
+	1.	Store, index, profile, or associate this address or its metadata with any individual, entity, behavioural model, or data set.
+	2.	Share, sell, transfer, lease, license, or otherwise make available this address or associated data to any third party.
+	3.	Use this address, its metadata, or any communication involving it for:
+	•	Marketing or advertising purposes (targeted or otherwise)
+	•	Training or refining AI models
+	•	Tracking or behavioural analysis
+	•	Identity linkage or enrichment
+	4.	Retain logs, cookies, fingerprints, or any other identifiers for longer than is technically necessary to transmit a given message.
+
+⸻
+
+3. Overriding Consent Clauses
+	•	Any “agreement” you attempt to enforce (e.g., by requiring me to click “I Agree”) is void as it relates to this address.
+	•	This Agreement prevails even if your system claims my continued use of your service implies consent.
+	•	Legitimate interest claims do not apply here. All such processing is expressly refused.
+
+⸻
+
+4. Scope of Data Covered
+
+These Terms apply to all information that could be linked to this email address, including but not limited to:
+	•	Headers, routing data, IP addresses, or device fingerprints
+	•	Behavioural patterns, interaction history, or inferred preferences
+	•	Associated names, pseudonyms, or identity markers
+	•	Any content of communications, attachments, or metadata
+
+⸻
+
+5. Enforcement and Remedies
+
+If you violate these Terms:
+	•	You agree to destroy all stored data originating from or linked to this address upon written request.
+	•	You waive any right to retain such data for archival, compliance, or “security” purposes.
+	•	You accept that non-compliance constitutes ongoing unauthorised use of personal data, subject to applicable privacy and data protection laws.
+
+⸻
+
+6. Jurisdiction and Interpretation
+
+This Agreement is binding globally, regardless of your jurisdiction or the physical location of your systems.
+Interpretation shall be in favour of the individual (the Data Subject) and against the processor or collector of data.
+If any clause is deemed unenforceable, the remaining clauses still apply in full.
+
+⸻
+
+7. Acceptance
+
+Engaging with this address or any resource under the domain termsattached.net constitutes full, unconditional, and irrevocable acceptance of these Terms.
