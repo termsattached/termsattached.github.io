@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>termsattached.net — protest as protocol</title>
+  <meta name="description" content="A quiet digital rebellion against default data exploitation. The email address is the contract. We log the silence." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>
+    :root{
+      --bg: #ffffff;
+      --fg: #111111;
+      --muted: #666666;
+      --line: #eaeaea;
+      --accent: #5c6f7b;
+      --maxw: 860px;
+      --pad: 20px;
+      --lh: 1.55;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);line-height:var(--lh);font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"}
+    a{color:inherit;text-underline-offset:2px}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--pad)}
+    header,main,footer{width:100%}
+    h1,h2,h3{margin:0 0 10px 0}
+    h1{font-size: clamp(28px, 5vw, 48px);font-weight:800;letter-spacing:-0.02em}
+    h2{font-size: clamp(20px, 3.5vw, 28px);font-weight:750}
+    p{margin:0 0 14px 0}
+    .topbar{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{font-weight:700;letter-spacing:0.02em;font-size:14px}
+    .hero{padding:64px 0 40px 0;text-align:center}
+    .hero p{color:var(--muted);font-size: clamp(16px, 2.6vw, 20px)}
+    .cta{margin-top:22px}
+    .btn{display:inline-block;border:1px solid var(--fg);padding:10px 16px;border-radius:4px;text-decoration:none;font-weight:700}
+    .btn:focus,.btn:hover{background:var(--fg);color:var(--bg)}
+    .section{padding:48px 0;border-top:1px solid var(--line)}
+    .light{background:#fafafa}
+    .terms{font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace}
+    .bullets{padding-left:18px}
+    .faq-item{margin-bottom:18px}
+    .micro{font-size:12px;color:var(--muted)}
+    .footer{padding:36px 0;border-top:1px solid var(--line);font-size:14px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    .tiny-link{font-size:12px}
+    .row{display:flex;gap:24px;flex-wrap:wrap}
+    .col{flex:1 1 280px}
+  </style>
+
+  <script type="application/json" id="terms-json">
+  {
+    "protocol": "termsattached",
+    "version": "1.0",
+    "issuer": "termsattached.net",
+    "identifiers": ["email", "phone", "handle"],
+    "principles": [
+      "My terms attach to my identifiers.",
+      "Use of my identifiers constitutes acceptance of my terms.",
+      "Silence and engagement are both logged as evidence.",
+      "The protest works whether you engage or ignore."
+    ],
+    "published_at": "2025-08-08T00:00:00Z"
+  }
+  </script>
+
+  <script>
+    (function(){
+      if(!sessionStorage.getItem('ta_visit_marked')){
+        sessionStorage.setItem('ta_visit_marked','1');
+        // placeholder for future serverless POST
+      }
+      window._ta_mark_engagement = function(){
+        try{ localStorage.setItem('ta_last_engagement', new Date().toISOString()); }catch(e){}
+      }
+    })();
+  </script>
+</head>
+<body>
+  <header class="wrap topbar" role="banner">
+    <div class="brand">TERMSATTACHED.NET</div>
+    <nav aria-label="meta">
+      <a class="tiny-link" href="/trackers">trackers</a>
+    </nav>
+  </header>
+
+  <main role="main">
+    <section class="hero wrap" id="hero" aria-labelledby="hero-headline">
+      <h1 id="hero-headline">The email address is the contract.</h1>
+      <p>By using it, you agree to my terms — not the other way around.<br/>If you ignore them, that’s the point: we log the silence.</p>
+      <div class="cta">
+        <a class="btn" href="#terms" onclick="_ta_mark_engagement()">Read the Terms</a>
+      </div>
+    </section>
+
+    <section id="terms" class="section light" aria-labelledby="terms-title">
+      <div class="wrap terms">
+        <h2 id="terms-title">The Terms</h2>
+        <ul class="bullets">
+          <li>My terms attach to my identifiers — email, phone, handle.</li>
+          <li>Use them, and you’ve agreed to my terms.</li>
+          <li>You can’t claim you didn’t see them; they’re here in plain sight.</li>
+          <li>Silence is logged.</li>
+          <li>Engagement is logged.</li>
+          <li>The protest works either way.</li>
+        </ul>
+        <p class="micro">Plain language for humans. Simple structure for machines.</p>
+      </div>
+    </section>
+
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="wrap">
+        <h2 id="faq-title">Questions You’ll Probably Ask</h2>
+        <div class="row">
+          <div class="col faq-item">
+            <strong>Is this legally enforceable?</strong>
+            <p>That’s not the point. This reverses the consent burden and records the imbalance.</p>
+          </div>
+          <div class="col faq-item">
+            <strong>What if they don’t read the terms?</strong>
+            <p>That’s the protest. Silence becomes the evidence.</p>
+          </div>
+          <div class="col faq-item">
+            <strong>Isn’t this just symbolic?</strong>
+            <p>Yes — and symbols reframe reality.</p>
+          </div>
+          <div class="col faq-item">
+            <strong>Won’t companies just ignore it?</strong>
+            <p>Almost certainly. That’s where the protest lives.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer" role="contentinfo">
+    <div>© 2025 termsattached.net — protest as protocol.</div>
+    <div class="tiny-link">
+      <a href="https://github.com/termsattached/termsattached.github.io" rel="noopener">GitHub repo</a>
+    </div>
+  </footer>
+</body>
+</html>
